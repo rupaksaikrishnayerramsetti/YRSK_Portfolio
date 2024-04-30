@@ -1,11 +1,11 @@
 import React from 'react'
-import { Description, Card, Top, Image, Name, Degree, Body, Date,Cgpa, Span } from './EducationCardStyle' 
+import { Description, Card, Top, Image, Name, Degree, Body, Date,Cgpa, Span } from './EducationCardStyle'
 
 const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={`/assets/Education/${education.img}`} />
+                <Image src={`${process.env.PUBLIC_URL}/assets/Education/${education.img}`} />
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>

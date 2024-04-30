@@ -15,7 +15,7 @@ export const SkillsCarousel = ({ skills }) => {
         <Paper key={index} square>
           <img
             className="slideImage"
-            src={`/assets/Skillimages/${skill.image}`}
+            src={`${process.env.PUBLIC_URL}/assets/Skillimages/${skill.image}`}
             alt={skill.name}
           />
         </Paper>

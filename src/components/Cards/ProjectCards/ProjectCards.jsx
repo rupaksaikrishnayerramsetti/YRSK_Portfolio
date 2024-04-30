@@ -4,7 +4,7 @@ import { Card, Image, Tags, Tag, Details, Title, Date, Description, Members, Ava
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={`/assets/projects/${project.image}`}/>
+            <Image src={`${process.env.PUBLIC_URL}/assets/projects/${project.image}`}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag>{tag}</Tag>
@@ -17,7 +17,7 @@ const ProjectCards = ({project,setOpenModal}) => {
             </Details>
             <Members>
                 {project.member?.map((member) => (
-                    <Avatar src={member.img? member.img : `/assets/projects/${member.gender?'Female.jpg':'Male.jpg'}`}/>
+                    <Avatar src={member.img? member.img : `${process.env.PUBLIC_URL}/assets/projects/${member.gender?'Female.jpg':'Male.jpg'}`}/>
                 ))}
             </Members>
         </Card>

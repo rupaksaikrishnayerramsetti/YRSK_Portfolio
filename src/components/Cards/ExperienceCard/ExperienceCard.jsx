@@ -5,7 +5,7 @@ const ExperienceCard = ({ experience }) => {
     return (
         <Card>
             <Top>
-                <Image src={`/assets/companies/${experience.img}`} alt={experience.company} />
+                <Image src={`${process.env.PUBLIC_URL}/assets/companies/${experience.img}`} alt={experience.company} />
                 <Body>
                     <Role>{experience.role}</Role>
                     <Company>{experience.company}</Company>
