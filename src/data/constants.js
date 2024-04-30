@@ -340,7 +340,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Role Employee Management System",
     date: "1 day",
     description:
@@ -364,9 +364,9 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Personal Portfolio Website",
-    date: "Apr 2024 - Apr 2024",
+    date: "Apr 2024 - Present",
     description:
       `
       This is my personal web site to showcase my skills, Project, Experience, Education and contact.
@@ -376,7 +376,77 @@ export const projects = [
       "yrsk.png",
     tags: ["React Js"],
     category: "web app",
-    github: "https://github.com/rupaksaikrishnayerramsetti/",
+    github: "https://github.com/rupaksaikrishnayerramsetti/YRSK_Portfolio",
+    member: [
+      {
+        name: "Yerramsetti R Sai Krishna",
+        img: "https://avatars.githubusercontent.com/u/65356848?v=4",
+        linkedin: "https://www.linkedin.com/in/yerramsettirsaikrishna/",
+        github: "https://github.com/rupaksaikrishnayerramsetti",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Youtube Scrapping/Analysis and Youtube Video Downloader",
+    date: "5 days",
+    description:
+      `
+      This is my personal Analysis project done on youtube channels, by selecting some channels, made analysis on them
+      by checking the videos, likes, subscribers,...etc. By using some data analysis as well as Visualization. with a 
+      Best feature of Youtube video downloader with the quality of up 720PX Quality directly from the youtube.
+      `,
+    image:
+      "youtube.png",
+    tags: ["Python", "Some dependency modules"],
+    category: "machine learning",
+    github: "https://colab.research.google.com/drive/1n6CK7Pnkbz1u5reMw5Y8chsbryN9HRR1",
+    member: [
+      {
+        name: "Yerramsetti R Sai Krishna",
+        img: "https://avatars.githubusercontent.com/u/65356848?v=4",
+        linkedin: "https://www.linkedin.com/in/yerramsettirsaikrishna/",
+        github: "https://github.com/rupaksaikrishnayerramsetti",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Cat Vs Dog classification",
+    date: "4 days",
+    description:
+      `
+      This is my personal project done using machine learning concepts to find whether a given image is cat or Dog.
+      I trained this model using both dogs and cats photos. I utilied classification algorithm to achive the required goal.
+      `,
+    image:
+      "cvd.jpg",
+    tags: ["Python", "Some dependency modules"],
+    category: "machine learning",
+    github: "https://colab.research.google.com/drive/14hUmYnsOV-laGY6XjMSXqmoB9E-g5McV",
+    member: [
+      {
+        name: "Yerramsetti R Sai Krishna",
+        img: "https://avatars.githubusercontent.com/u/65356848?v=4",
+        linkedin: "https://www.linkedin.com/in/yerramsettirsaikrishna/",
+        github: "https://github.com/rupaksaikrishnayerramsetti",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "Image to pencil sketch creation",
+    date: "4 days",
+    description:
+      `
+      This is my personal project done using OpenCV concepts where an input image is given where by using different techniques and predefined 
+      mathods and functionalities the image is converted into a pencil sketch images.
+      `,
+    image:
+      "pencil.png",
+    tags: ["Python", "OpenCV modules"],
+    category: "machine learning",
+    github: "https://colab.research.google.com/drive/1647DF639GNBtOXj-v1tveXI4NKKOecUW#scrollTo=dTCKwZi6QnBk",
     member: [
       {
         name: "Yerramsetti R Sai Krishna",
@@ -420,4 +490,64 @@ export const projects = [
       }
     ],
   },
+  {
+    id: 11,
+    title: "Color Recoginition",
+    date: "6 days",
+    description:
+      `
+      This is my personal project done using OpenCV concepts where the training happend with the different then
+      if an image is given then it detects the colors present in the image.
+      `,
+    image:
+      "colorRec.jpg",
+    tags: ["Python", "Machine Learning concepts"],
+    category: "machine learning",
+    github: "https://colab.research.google.com/drive/1RGVF02D5GAhdTX8SgXGlaKBZJY1t5M3G",
+    member: [
+      {
+        name: "Yerramsetti R Sai Krishna",
+        img: "https://avatars.githubusercontent.com/u/65356848?v=4",
+        linkedin: "https://www.linkedin.com/in/yerramsettirsaikrishna/",
+        github: "https://github.com/rupaksaikrishnayerramsetti",
+      },
+    ],
+  },
+];
+
+export const codingProfiles = {
+  'Leetcode': "https://leetcode.com/rupaksaikrishnayerramsetti/",
+  'Hackerrank': "https://www.hackerrank.com/19B91A05Q7CSE",
+  'geeksforgeeks': "https://auth.geeksforgeeks.org/user/rupaksaikrishnayerramsetti/practice/"
+}
+
+export const certificates = [
+  {
+    "name": "The Joy of Computing using Python",
+    "link": "https://drive.google.com/file/d/1rxzGRrVNdFGJ9YZBoHsr-DA9wAqxzYGt/view?usp=sharing"
+  },
+  {
+    "name": "Data Analytics with Python",
+    "link": "https://drive.google.com/file/d/1OSrCZE7DanVra-RYhg9Rqo9w1UBp1ieb/view?usp=sharing"
+  },
+  {
+    "name": "Data Base Management System",
+    "link": "https://drive.google.com/file/d/1V9YsKg1C3kymGOQtAWqrQqcuP-RsgtTP/view?usp=sharing"
+  },
+  {
+    "name": "Introduction to Programming in C",
+    "link": "https://drive.google.com/file/d/1hu0F_hMTCMyBVv3x4PPEwW_j_Ckw91en/view?usp=sharing"
+  },
+  {
+    "name": "Certificate of Appreciation",
+    "link": "https://drive.google.com/file/d/1nelkpQfaVTrAPlY-urmI6fxwKNqfRPqY/view?usp=sharing"
+  },
+  {
+    "name": "Programming in Java",
+    "link": "https://drive.google.com/file/d/1Zxkz-EULi5TrC4wzZjFmYKroT7ubETpe/view?usp=sharing"
+  },
+  {
+    "name": "AI and ML",
+    "link": "https://drive.google.com/file/d/1X-WzNPY7Hsi9gBiDq6a8BLOmn5A5OOyO/view?usp=sharing"
+  }
 ];
