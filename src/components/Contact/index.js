@@ -3,7 +3,6 @@ import { useRef, useState } from 'react';
 import { handleError } from './ContactUtility';
 import emailjs from '@emailjs/browser';
 import { Snackbar, Button } from '@mui/material';
-import { MorphIcon } from 'react-svg-buttons';
 import { Container, Wrapper, Title, Desc, ContactForm, ContactTitle, StyledTextField } from './ContactStyle';
 
 const Contact = () => {
@@ -135,7 +134,7 @@ const Contact = () => {
               color: isSending ? '#FFFFFF' : '#FFEB3B',
             }}
           >
-            {isSending ? <MorphIcon sx={{ color: "#4CAF50", fontSize: "18px" }} type="check" /> : 'Send'}
+            {isSending ? 'Done' : 'Send'}
           </Button>
         </ContactForm>
         <Snackbar
