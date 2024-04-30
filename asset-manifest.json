@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/YRSK_Portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/YRSK_Portfolio/static/js/main.3de7f748.js",
+    "static/media/HeroImage.jpg": "/YRSK_Portfolio/static/media/HeroImage.a1ad1c83407168064e23.jpg",
+    "static/media/programmer.jpg": "/YRSK_Portfolio/static/media/programmer.4241785b27ac6d098418.jpg",
+    "static/media/geeksforgeeks.svg": "/YRSK_Portfolio/static/media/geeksforgeeks.eb149b14946d4316350b8e2fcce8a394.svg",
+    "static/media/leetcode.svg": "/YRSK_Portfolio/static/media/leetcode.a33aa94f7b15a4662c7cdfe98ddd9090.svg",
+    "static/media/hackerrank.svg": "/YRSK_Portfolio/static/media/hackerrank.1cdb0f9466e0fd6f46c71beb060c972e.svg",
+    "index.html": "/YRSK_Portfolio/index.html",
+    "main.bf538fe7.css.map": "/YRSK_Portfolio/static/css/main.bf538fe7.css.map",
+    "main.3de7f748.js.map": "/YRSK_Portfolio/static/js/main.3de7f748.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.3de7f748.js"
+  ]
+}
