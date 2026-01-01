@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
 
 export const Container = styled.div`
     background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
@@ -50,67 +49,48 @@ export const Desc = styled.div`
     }
 `;
 
-export const Divider = styled.div`
-    width: 1.5px;
-    background: ${({ theme }) => theme.primary};
+export const CardGrid = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
 `
 
-export const CertificateContainer = styled.div`
-    display: grid;
-    gap: 1rem;
-    justify-content: center;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
-`;
-
-export const StyledDiv = styled.div`
-  align-items: center;
-  background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+export const CertCard = styled.div`
+  width: 300px;
+  height: 250px;
+  background-color: ${({ theme }) => theme.card};
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  margin: 1rem;
-
-  &:active,
+  border-radius: 10px;
+  box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
   &:hover {
-    outline: 0;
-    background: none;
+      transform: translateY(-10px);
+      box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+      filter: brightness(1.1);
   }
+`
 
-  span {
-    padding: 16px 24px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: background 0.3s ease-in-out;
-  }
+export const CertImage = styled.img`
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: ${({ theme }) => theme.white};
+`
 
-  &:hover span {
-    background: rgb(5, 6, 45);
-  }
-
-  @media (min-width: 768px) {
-    font-size: 24px;
-    min-width: 196px;
-  }
-`;
+export const CertTitle = styled.div`
+  font-size: 16px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  padding: 10px;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

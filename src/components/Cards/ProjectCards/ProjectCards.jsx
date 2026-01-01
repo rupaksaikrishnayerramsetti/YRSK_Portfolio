@@ -1,13 +1,28 @@
-import React from 'react'
-import { Card, Image, Tags, Tag, Details, Title, Date, Description, Members, Avatar } from './ProjectCardsStyle'
+import React, { useState } from 'react'
+import { Card, Image, Video, Tags, Tag, Details, Title, Date, Description, Members, Avatar } from './ProjectCardsStyle'
 
 const ProjectCards = ({project,setOpenModal}) => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={`${process.env.PUBLIC_URL}/assets/projects/${project.image}`}/>
+        <Card 
+            onClick={() => setOpenModal({state: true, project: project})}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            {project.video && isHovered ? (
+                <Video 
+                    src={`${process.env.PUBLIC_URL}/assets/projects/${project.video}`} 
+                    autoPlay 
+                    loop 
+                    muted 
+                />
+            ) : (
+                <Image src={`${process.env.PUBLIC_URL}/assets/projects/${project.image}`}/>
+            )}
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -16,8 +31,8 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img? member.img : `${process.env.PUBLIC_URL}/assets/projects/${member.gender?'Female.jpg':'Male.jpg'}`}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img? member.img : `${process.env.PUBLIC_URL}/assets/projects/${member.gender?'Female.jpg':'Male.jpg'}`}/>
                 ))}
             </Members>
         </Card>

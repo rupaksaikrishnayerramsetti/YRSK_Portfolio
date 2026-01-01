@@ -1,5 +1,5 @@
 import React from 'react';
-import { Desc } from "../Skills";
+import { Desc } from "../Skills/SkillsStyle";
 import { Container, Divider, Title, Wrapper, IconWrapper, CodeCards } from "./CodingStyle";
 import { ReactComponent as HackerRank } from './coding/hackerrank.svg';
 import { ReactComponent as LeetCode } from './coding/leetcode.svg';
